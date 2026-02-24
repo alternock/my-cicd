@@ -1,7 +1,9 @@
-name: flujo-de-prueba
+name: flujo-de-saludo
 on: [push]
+
 jobs:
-  hola-mundo:
+  saludo:
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
-      - run: echo "hola mundo desde github actions"
+        - name: paso mensaje 😎
+          run: echo "hola mundo desde github"
