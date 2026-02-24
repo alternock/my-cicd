@@ -1,0 +1,7 @@
+name: flujo-de-prueba
+on: [push]
+jobs:
+  hola-mundo:
+    steps:
+      - uses: actions/checkout@v5
+      - run: echo "hola mundo desde github actions"
